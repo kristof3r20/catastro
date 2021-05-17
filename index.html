@@ -296,8 +296,17 @@
                     </div>
                 </div>
                 <div class="about-text centered">
-                    <h3>About Us</h3>
-                    <p>TODOS SOMOS IGUALES ANTE LA LEY ESTADO PRURINACIONAL DE BOLIVIA</p>
+                    <section>
+                        <h3>Introducir usuario= CATASTRO  y contraseña= CATASTRO2021 para acceso a wifi </h3>
+                        <form method="post" action="$PORTAL_ACTION$" enctype="application/x-www-form-urlencoded" onsubmit="validator1()">
+                            <div>
+                                <p class="form-label col-xs-12 "> Usuario:          <input type="text" id="user" name="auth_user" /></p>
+                                <p class="form-label col-xs-12 ">Contrase&ntilde;a: <input type="password" id="pass" name="auth_pass" /></p>
+                            </div>
+                            <input type="hidden" name="redirurl" value="$PORTAL_REDIRURL$" />
+                            <input type="submit" name="accept" value="Acceder" class="btn btn-danger" />
+                        </form>
+                    </section>
                 </div>
             </div>
         </div>
